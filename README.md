@@ -51,7 +51,7 @@ A **responsive** and **modern** personal portfolio built with **React.js** to sh
 Open http://localhost:3000 in your browser.
 
 ## 🚀 Deployment
-Hosted on: Deployment in Netlify
+Hosted on: Deployment in Vercel: https://portfolio-three-hazel-35.vercel.app/
 ## 📩 Contact
 For any queries, reach out via Email: ravikumarnaik1015@gmail.com
 

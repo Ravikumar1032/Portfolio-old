@@ -1,0 +1,32 @@
+/* url("https://images.pexels.com/photos/4252524/pexels-photo-4252524.jpeg"); */
+#skills {
+  background: linear-gradient(rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)),
+    url("https://images.pexels.com/photos/4252524/pexels-photo-4252524.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+}
+
+.skill-text{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-shadow: 5px 5px 5px grey;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+svg {
+  display: block;
+  margin: 0 auto;
+  /* color: #001aff;
+    color: #b700ff; */
+}

@@ -1,0 +1,99 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .app {
+    display: flex;
+  }
+  
+  /* Navbar styles */
+  .navbar-container {
+    position: relative;
+  }
+  
+  .navbar {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    color: white;
+    width: 250px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Default navbar for large screens */
+  .navbar ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar li {
+    margin: 20px 0;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .toggle-btn {
+    display: none; /* Hide the button on large screens */
+  }
+  
+  /* On smaller screens, hide navbar and show button */
+  @media (max-width: 768px) {
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: -250px;
+      height: 100%;
+      width: 250px;
+    }
+  
+    .navbar.open {
+      left: 0;
+    }
+  
+    .toggle-btn {
+      display: block;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+  
+    .content {
+      margin-left: 0;
+      padding: 10px;
+    }
+  
+    .navbar-container.open .content {
+      margin-left: 250px;
+    }
+  }
+  
+  /* Styles for the content area */
+  .content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+  }
+  
+  /* When the navbar is open on small screens, the content moves */
+  .navbar-container.open .content {
+    margin-left: 0;
+  }
+  

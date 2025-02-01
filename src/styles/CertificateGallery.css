@@ -1,0 +1,113 @@
+.certificates{
+  /* background-color: #1E90FF; */
+  background-image: url("portfolio/src/Images/gradient.png");
+  
+}
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.gallery-item {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}  
+
+.position-0 {
+  transform: translateZ(200px) scale(1.2);
+  opacity: 1;
+  z-index: 3;
+}
+
+.position-1 {
+  transform: translateX(150px) translateZ(100px) scale(1);
+  opacity: 0.7;
+  z-index: 2;
+}
+
+.position-4 {
+  transform: translateX(-150px) translateZ(100px) scale(1);
+  opacity: 0.7;
+  z-index: 2;
+}
+
+.position-2 {
+  transform: translateX(300px) translateZ(0) scale(0.8);
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.position-3 {
+  transform: translateX(-300px) translateZ(0) scale(0.8);
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.text-center h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* media query  */
+@media (max-width: 576px) {
+    .gallery-container {
+      height: 300px;
+      perspective: 800px;
+      overflow-x: hidden;
+      
+    }
+  
+    .gallery-item {
+      width: 200px;
+      height: 150px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+  
+    .position-0 {
+      transform: translateZ(150px) scale(1.1);
+      opacity: 1;
+      z-index: 3;
+    }
+  
+    .position-1 {
+      transform: translateX(100px) translateZ(75px) scale(0.9);
+      opacity: 0.7;
+      z-index: 2;
+    }
+  
+    .position-4 {
+      transform: translateX(-100px) translateZ(75px) scale(0.9);
+      opacity: 0.7;
+      z-index: 2;
+    }
+  
+    .position-2 {
+      transform: translateX(200px) translateZ(0) scale(0.7);
+      opacity: 0.5;
+      z-index: 1;
+    }
+  
+    .position-3 {
+      transform: translateX(-200px) translateZ(0) scale(0.7);
+      opacity: 0.5;
+      z-index: 1;
+    }
+  
+    .text-center h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+  }
+  

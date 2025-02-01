@@ -1,0 +1,247 @@
+/* Hero Section Styles */
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  /* Ensures the video and images stay within bounds */
+}
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.hero-cont {
+  position: relative;
+  z-index: 1;
+  /* Ensures the text content appears above the video and images */
+}
+
+.hero-images {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.hero-bg img {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+  opacity: 0.7;
+  animation: bouncebg 2s infinite;
+}
+
+@keyframes bouncebg {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.hero-img {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+}
+
+.hero-img img {
+  width: 100%;
+  max-width: 400px;
+  animation: bounce 3s infinite;
+
+  /* border-radius: 50%;  */
+  /* border: 5px solid white; */
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(-10px);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+}
+
+.hero-name {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+}
+
+.hero h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  text-shadow: 5px 5px 5px #c2c1c1;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  float: left;
+  text-shadow: 5px 5px 5px #c2c1c1;
+  /* color: #000000; */
+}
+
+/* mobile width media query */
+@media (max-width: 500px) {
+  .hero{
+    min-height: 60vh;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+}
+
+.typed-cursor {
+  font-weight: bold;
+  color: #fff;
+}
+
+/* icons code  */
+.Social-media {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+
+}
+
+.Social-media a {
+  display: flex;
+  background: #fff;
+  height: 30px;
+  width: 30px;
+  margin: 10px 10px 0px;
+  padding: 10px;
+  border-radius: 45% 45% 45% 0px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 6px 6px 10px -1px rgba(0, 124, 196, 0.15),
+              -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 124, 196, 0);
+  transition: transform 0.5s;
+}
+
+.Social-media a i {
+  font-size: 20px; /* Adjust icon size */
+  color: #777;
+  transition: transform 0.5s, color 0.5s;
+}
+
+/* Hover Effects */
+.Social-media a:hover {
+  box-shadow: inset 4px 4px 6px -2px rgba(0, 0, 0, 0.2),
+              inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+              -0.5px -0.5px 0px -1px rgba(255, 255, 255, 1),
+              0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+              0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 124, 196, 0.1);
+  transform: translateY(-2px);
+}
+
+.Social-media a:hover i {
+  transform: scale(1.02);
+}
+
+/* Specific Colors on Hover */
+.Social-media a:hover .fa-facebook {
+  color: #3b5998;
+}
+.Social-media a:hover .fa-linkedin {
+  color: #0077b5;
+}
+.Social-media a:hover .fa-instagram {
+  color: #e1306c;
+}
+.Social-media a:hover .fa-youtube {
+  color: #ff0000;
+}
+.Social-media a:hover .fa-github {
+  color: #333;
+}
+.hire-me{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-60%, 0%);
+}
+
+.custom-btn {
+  color: #fff;
+  font-weight: bolder;
+  width: 130px;
+  height: 40px;
+  padding: 5px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+
+}
+
+.btn-9 {
+  color: #fff352;
+  border: 1px solid #fff352;
+  box-shadow: 0 0 5px #fff352, 0 0 5px #fff352 inset;
+  z-index: 2;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.btn-9:after {
+  position: absolute;
+  content: " ";
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.btn-9:hover {
+  color: #000;
+  font-weight: bolder;
+  box-shadow:  4px 4px 6px 0 #b8b6b6;
+}
+.btn-9:hover:after {
+  background: #fff352;
+  -webkit-transform: scale(2) rotate(180deg);
+  transform: scale(2) rotate(180deg);
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255, 1),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255, 1),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+}

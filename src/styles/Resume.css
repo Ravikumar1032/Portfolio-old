@@ -1,0 +1,31 @@
+.about-me {
+  opacity: 0;
+  /* Ensures smooth fade-in */
+  transform: translateY(50px);
+  /* Initial position */
+  transition: all 0.5s ease-in-out;
+  padding: 5% 0px;
+}
+
+[data-aos] {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.gradient-button {
+  background: linear-gradient(to right, #b50ae0 10%, #2575fc 80%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding:5px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gradient-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
